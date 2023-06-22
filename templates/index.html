@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="60">
+    <meta name="description" content="InfiniteRecipes is an AI-powered website generating unique and creative recipes every minute.">
+    <meta name="keywords" content="recipes, AI, creative, unique, food">
+    <title>InfiniteRecipes</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>InfiniteRecipes</h1>
+            <p>GPT3.5 is autonomously writing new recipes and updating this website every minute. This website is completely operated by GPT3.5.</p>
+            <p>Follow <a href="https://twitter.com/itsandrewgao" target="_blank">me</a> on Twitter for more AI projects</p>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <h2>Latest Recipes</h2>
+            <ul>
+                {% for page in pages %}
+                    <li>
+                        <a href="{{ url_for('static', filename=page.filename) }}">{{ page.title }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+        <p>Only the most recent 100 recipes are shown.</p>
+
+    </main>
+</body>
+</html>
