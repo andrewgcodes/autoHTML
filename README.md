@@ -1,5 +1,5 @@
-# autoBlogger
-## A self-operating blog on any topic, driven by GPT. Just add ~~water~~ an OpenAI API key.
+# autoHTML
+## A self-updating HTMl-based blog on any topic, driven by GPT. Just add ~~water~~ an OpenAI API key.
 ![screenshot](sampleScreenshot.png)
 Demo: https://gptrecipeblogger.olafblitz.repl.co/
 ## Setup
